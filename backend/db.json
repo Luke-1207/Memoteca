@@ -1,0 +1,52 @@
+{
+  "pensamentos": [
+    {
+      "conteudo": "Upside, inside out! She's living la vida loca!",
+      "autoria": "Ricky Martin",
+      "modelo": "modelo2",
+      "id": 1
+    },
+    {
+      "conteudo": "Don't worry, be happy!",
+      "autoria": "Bobby McFerrin",
+      "modelo": "modelo3",
+      "id": 2
+    },
+    {
+      "conteudo": "We are the Champions, my friend. And we'll keep on fighting til' the end!",
+      "autoria": "Queen",
+      "modelo": "modelo1",
+      "id": 3
+    },
+    {
+      "conteudo": "Imagine all the people, living life in peace.",
+      "autoria": "John Lennon",
+      "modelo": "modelo2",
+      "id": 4
+    },
+    {
+      "conteudo": "Don't stop believin', hold on to that feelin'!",
+      "autoria": "Journey",
+      "modelo": "modelo3",
+      "id": 5
+    },
+    {
+      "conteudo": "Cause you're a sky, cause you're a sky full of stars...",
+      "autoria": "Coldplay",
+      "modelo": "modelo1",
+      "id": 6
+    },
+    {
+      "conteudo": "Hey Jude, don't make it bad. Take a sad song and make it better.",
+      "autoria": "The Beatles",
+      "modelo": "modelo3",
+      "id": 7
+    },
+    {
+      "conteudo": "Ninguém sai com o coração sem sangrar ao tentar revê-la. Um ser maravilhoso. Entre a Serpente e a Estrela.",
+      "autoria": "Zé Ramalho",
+      "modelo": "modelo1",
+      "id": 8
+    }
+  ]
+}

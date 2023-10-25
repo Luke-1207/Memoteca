@@ -27,7 +27,13 @@
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
-          <input type="radio" name="modelo-card" id="modelo1" value="modelo1">
+          <input
+            type="radio"
+            name="modelo-card"
+            id="modelo1"
+            value="modelo1"
+            [(ngModel)]="pensamento.modelo"
+            >
           <div class="custom-radio">
             <span></span>
           </div>
@@ -40,9 +46,16 @@
           <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
+
       <div class="radio-modelo">
         <label for="modelo2">
-          <input type="radio" name="modelo-card" id="modelo2" value="modelo2">
+          <input
+            type="radio"
+            name="modelo-card"
+            id="modelo2"
+            value="modelo2"
+            [(ngModel)]="pensamento.modelo"
+            >
           <div class="custom-radio">
             <span></span>
           </div>
@@ -55,9 +68,16 @@
           <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
+
       <div class="radio-modelo">
         <label for="modelo3">
-          <input type="radio" name="modelo-card" id="modelo3" value="modelo3">
+          <input
+            type="radio"
+            name="modelo-card"
+            id="modelo3"
+            value="modelo3"
+            [(ngModel)]="pensamento.modelo"
+            >
           <div class="custom-radio">
             <span></span>
           </div>
@@ -72,8 +92,8 @@
       </div>
     </div>
     <div class="acoes">
-      <button (click)="criarPensamento()" routerLink="/listarPensamento" class="botao">Salvar</button>
-      <button (click)="cancelarPensamento()" routerLink="/listarPensamento" class="botao">Cancelar</button>
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelarPensamento()" class="botao">Cancelar</button>
     </div>
   </form>
 </section>
