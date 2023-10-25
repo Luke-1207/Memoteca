@@ -12,9 +12,17 @@ export class PensamentoComponent implements OnInit {
     autoria: 'Lucas Fabiano',
     modelo: 'modelo3'
   }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  larguraPensamento(): string{
+    if(this.pensamento.conteudo.length >= 256){
+      return 'pensamento-g'
+    }
+    return 'pensamento-p'
   }
 
 }
