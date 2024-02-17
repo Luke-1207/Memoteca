@@ -1,27 +1,27 @@
-<section class="container criar-pensamentos ff-inter">
+<section class="container editar-pensamentos ff-inter">
   <header class="header">
-    <h2>Adicione um <br>pensamento novo: </h2>
+    <h2>Adicione um <br>pensamento novo:</h2>
   </header>
   <form [formGroup]="formulario">
     <label for="pensamento">Pensamento</label>
     <input
       type="textarea"
       class="input"
-      formControlName="conteudo"
       id="pensamento"
+      formControlName="conteudo"
       placeholder="Digite o pensamento"
     >
     <div class="mensagem__erro"
-    *ngIf="formulario.get('conteudo')?.errors  && formulario.get('conteudo')?.touched">
+    *ngIf="formulario.get('conteudo')?.errors?.['required'] && formulario.get('conteudo')?.touched">
       Pensamento é obrigatório!
     </div>
 
-    <label for="autoria">Autoria</label>
+    <label for="autoria">Autoria ou fonte</label>
     <input
       type="text"
       class="input"
-      formControlName="autoria"
       id="autoria"
+      formControlName="autoria"
       placeholder="Digite a autoria ou fonte"
     >
     <div class="mensagem__erro"
@@ -30,7 +30,7 @@
     </div>
     <div class="mensagem__erro"
     *ngIf="formulario.get('autoria')?.errors?.['minlength'] && formulario.get('autoria')?.touched">
-      Autoria precisa ter, no mínimo, 3 caracteres!
+    Autoria precisa ter, no mínimo, 3 caracteres!
     </div>
 
     <label for="modelo">Selecione o modelo do card:</label>
@@ -39,14 +39,14 @@
         <label for="modelo1">
           <input
             type="radio"
-            formControlName="modelo"
             id="modelo1"
             value="modelo1"
-            >
+            formControlName="modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span> Modelo 1 </span>
+          <span>Modelo 1</span>
         </label>
         Prévia:
         <div class="modelo modelo1 ff-roboto-mono">
@@ -60,14 +60,14 @@
         <label for="modelo2">
           <input
             type="radio"
-            formControlName="modelo"
             id="modelo2"
             value="modelo2"
-            >
+            formControlName="modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span> Modelo 2 </span>
+          <span>Modelo 2</span>
         </label>
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
@@ -81,14 +81,14 @@
         <label for="modelo3">
           <input
             type="radio"
-            formControlName="modelo"
             id="modelo3"
             value="modelo3"
-            >
+            formControlName="modelo"
+          >
           <div class="custom-radio">
             <span></span>
           </div>
-          <span> Modelo 3 </span>
+          <span>Modelo 3</span>
         </label>
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
@@ -101,11 +101,11 @@
     <div class="acoes">
       <button
         [disabled]="!formulario.valid"
-        (click)="criarPensamento()"
+        (click)="editarPensamento()"
         [ngClass]="habilitarBotao()"
         >Salvar
       </button>
-      <button (click)="cancelarPensamento()" class="botao">Cancelar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
 </section>
